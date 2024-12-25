@@ -1,0 +1,68 @@
+.valuesGeneratorContainer {
+  position:relative;
+  .valuesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+
+    .valueSingleContainer {
+      display: flex;
+      gap: 10px;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      background: var(--mainColor);
+
+      span {
+        color: white;
+      }
+
+      .deleteValue {
+        cursor: pointer;
+
+        svg {
+          pointer-events: none;
+          width: 20px;
+          color: var(--error);
+        }
+      }
+    }
+  }
+  .valuesGeneratorSearchResultsContainer {
+    position:absolute;
+    top:70px;
+    width:200px;
+    border:1px solid var(--mainColor);
+    z-index:999;
+    max-height:200px;
+    overflow-y:auto;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: lightgray;
+      border-radius:10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: var(--mainBlue);
+      border-radius:10px;
+    }
+    .valuesGeneratorSearchResult {
+      background:white;
+      cursor:pointer;
+      border:1px solid var(--lightGray);
+      transition:0.3s ease all;
+      padding:0.4rem;
+      font-size:14px;
+      &:hover {
+        background:var(--mainColor);
+        color:white;
+      }
+    }
+  }
+}

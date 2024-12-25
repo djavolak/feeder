@@ -1,0 +1,38 @@
+.galleryBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+  .galleryImagesContainer {
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    justify-content: center;
+  }
+  .insertImagesButton {
+    outline:none;
+    width:max-content;
+    border:none;
+    margin:0 auto;
+    display:block;
+    border-radius:8px;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+    background:var(--customBlue);
+    color:white;
+    transition:0.3s ease background;
+    &:hover {
+      background:var(--customGreen);
+    }
+  }
+  img {
+    max-width:150px;
+    max-height:150px;
+    object-fit:contain;
+    display:block;
+    margin:0.5rem auto;
+  }
+}

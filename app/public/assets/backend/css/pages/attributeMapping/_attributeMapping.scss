@@ -1,0 +1,42 @@
+.placeholderLabel {
+  height: 24px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+#attributeIframeModal {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  display: none;
+  &.show {
+    display: block;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  #closeIframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    svg {
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+    }
+  }
+}
+select[name="localAttributeValueFilter"] {
+  width: 300px !important;
+}
+.deleteLocalAttribute {
+  margin-top: auto;
+}

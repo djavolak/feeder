@@ -1,0 +1,14 @@
+.secondDescriptionAttributeDelete {
+  position: absolute;
+  right: -35px;
+  width: 25px;
+  color: red;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  cursor:pointer;
+  svg {
+    pointer-events: none;
+  }
+}

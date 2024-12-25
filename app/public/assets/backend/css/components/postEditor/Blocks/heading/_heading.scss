@@ -1,0 +1,9 @@
+.headingBLockContainer {
+  display:flex;
+  gap:1rem;
+  .blockInputContainer {
+    &:nth-of-type(2) {
+      flex:1;
+    }
+  }
+}

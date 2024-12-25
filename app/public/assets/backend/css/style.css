@@ -1,0 +1,2758 @@
+:root {
+  --mainColor: #4e73df;
+  --success: #1cc88a;
+  --error: #e74a3b;
+  --errorShadow: 231, 74, 59;
+  --successDark: #17a673;
+  --lightGray: #e3e6f0;
+}
+
+.freeze {
+  overflow: hidden;
+}
+
+.actionSection {
+  width: 135px;
+}
+.actionSection .actionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.actionSection .actionContainer .deleteEntity {
+  cursor: pointer;
+  display: inline;
+}
+.actionSection .actionContainer .deleteEntity svg {
+  pointer-events: none;
+  color: var(--red);
+  width: 28px;
+}
+.actionSection .actionContainer .editEntity {
+  cursor: pointer;
+  display: inline;
+}
+.actionSection .actionContainer .editEntity svg {
+  pointer-events: none;
+  color: var(--green);
+  width: 28px;
+}
+.actionSection .actionContainer .copyAsDraft {
+  cursor: pointer;
+  display: inline;
+}
+.actionSection .actionContainer .copyAsDraft svg {
+  pointer-events: none;
+  color: var(--mainColor);
+  width: 28px;
+}
+.actionSection .actionContainer a svg {
+  pointer-events: none;
+  color: var(--green);
+  width: 28px;
+}
+
+.marginTop {
+  margin-top: 1.5rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.extraSpace {
+  margin-bottom: 46px;
+}
+
+.btn.btn-primary {
+  background: var(--mainColor);
+  border-color: var(--mainColor);
+}
+.btn.btn-primary:active {
+  background-color: var(--mainColor) !important;
+  border-color: var(--mainColor) !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--mainColor) !important;
+  border-color: var(--mainColor) !important;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#description {
+  height: 200px;
+}
+
+#shortDescription {
+  height: 100px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flexContainer.productFlexContainer {
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.flexContainer > div:nth-of-type(1) {
+  max-width: 600px;
+  width: 600px;
+}
+.flexContainer > div:nth-of-type(2) {
+  max-width: 800px;
+  width: 800px;
+}
+.flexContainer > div:nth-of-type(2).productInnerFlex {
+  max-width: 800px;
+  width: 800px;
+}
+
+.scrollableContainer {
+  height: 355px;
+  overflow-x: auto;
+  /* Track */
+  /* Handle */
+}
+.scrollableContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollableContainer::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+.scrollableContainer::-webkit-scrollbar-thumb {
+  background: #4e73df;
+  border-radius: 10px;
+}
+
+.scrollableContainerCustomHeight {
+  overflow-x: auto;
+  /* Track */
+  /* Handle */
+}
+.scrollableContainerCustomHeight::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollableContainerCustomHeight::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+.scrollableContainerCustomHeight::-webkit-scrollbar-thumb {
+  background: #4e73df;
+  border-radius: 10px;
+}
+
+.flexedList {
+  display: flex;
+  flex-direction: column;
+}
+.flexedList > div {
+  display: flex;
+  flex-direction: column;
+}
+.flexedList > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.innerFlex {
+  display: flex;
+  gap: 2rem;
+}
+
+.secondLevel {
+  padding-left: 1rem;
+}
+
+.thirdLevel {
+  padding-left: 2rem;
+}
+
+.categoryList {
+  width: 300px;
+}
+
+#categorySearch {
+  margin: 1rem 0;
+}
+
+.flexedCenter {
+  display: flex;
+  align-items: center;
+}
+
+.mapBody > form > .row > div:nth-of-type(2) .row {
+  align-items: flex-start;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.tox-statusbar__branding {
+  display: none;
+}
+
+.highlight {
+  border: 2px solid var(--mainColor);
+}
+
+#mediaLibraryNavigation {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+}
+#mediaLibraryNavigation svg {
+  pointer-events: none;
+  fill: rgba(255, 255, 255, 0.3);
+  width: 22px;
+}
+#mediaLibraryNavigation span {
+  color: white;
+  font-size: 0.65rem;
+}
+#mediaLibraryNavigation:hover svg {
+  fill: white;
+}
+
+.mediaLibraryInput {
+  width: 75px;
+  color: var(--textColorAlt);
+  border-radius: 4px;
+  border: 1px solid var(--grayDark);
+  padding: 0.5rem;
+  font-size: 16px;
+}
+.mediaLibraryInput:focus {
+  color: var(--textColorAlt);
+  background-color: white;
+  outline: 1px solid var(--mainBlueLight);
+}
+
+.login-form-addon {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #d1d3e2;
+  border-radius: 0.35rem;
+}
+
+.menu-item {
+  width: 100px;
+  height: 100px;
+}
+
+.error {
+  font-size: 16px;
+  color: #cc0000;
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.citySuggest {
+  overflow: scroll;
+  height: 200px;
+}
+
+.citySuggest li {
+  cursor: pointer;
+}
+
+.removeService {
+  cursor: pointer;
+  color: red;
+}
+
+.qty {
+  margin: 0 10px;
+}
+
+#step1 select {
+  display: inline;
+}
+
+.businessInfo input, .businessInfo textarea {
+  display: inline;
+  width: 77%;
+  max-width: 350px;
+  padding: 0 8px;
+  height: auto;
+}
+
+.businessInfo label {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 70px;
+}
+
+.businessInfo .form-group {
+  margin-bottom: 0;
+}
+
+table .form-control {
+  width: 70%;
+  display: inline;
+}
+
+table {
+  margin-bottom: 0 !important;
+}
+table thead.lowOpacity,
+table tbody.lowOpacity,
+table tfoot.lowOpacity {
+  opacity: 0.5;
+}
+table.tableControls {
+  margin-top: 1.5rem;
+}
+table.tableControls td:nth-of-type(1) {
+  width: 45%;
+  border-left: 1px solid #e3e6f0;
+}
+table.tableControls td:nth-of-type(2) {
+  width: 20%;
+}
+table.tableControls td:nth-of-type(2) select {
+  width: 100px;
+}
+table.tableControls td:nth-of-type(3) {
+  width: 25%;
+}
+table.tableControls td:nth-of-type(4) {
+  border-right: 1px solid #e3e6f0;
+  width: 10%;
+}
+table.tableControls td:nth-of-type(4) input {
+  display: block;
+  margin-left: auto;
+  width: 250px;
+}
+table .tableHeader {
+  position: relative;
+}
+table .tableHeader .sortControls {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: flex;
+  transform: translateY(50%);
+}
+table .tableHeader .sortControls .sortColumn {
+  transition: 0.3s ease all;
+  cursor: pointer;
+  width: 20px;
+}
+table .tableHeader .sortControls .sortColumn svg {
+  pointer-events: none;
+}
+table .tableHeader .sortControls .sortColumn.hidden {
+  display: none;
+}
+table .tableHeader .sortControls .sortColumn.active svg {
+  stroke: var(--mainColor);
+}
+table a {
+  color: var(--success);
+}
+table a:hover {
+  color: var(--successDark);
+}
+table a:visited {
+  color: var(--success);
+}
+
+.tablePagination {
+  display: flex;
+  gap: 0.2rem;
+}
+.tablePagination .buttonContainer {
+  display: flex;
+  gap: 0.2rem;
+}
+.tablePagination button.prevButton svg, .tablePagination button.nextButton svg {
+  pointer-events: none;
+  width: 16px;
+}
+
+.tableMessage {
+  font-weight: bold;
+}
+
+.ghostRow {
+  height: 63px;
+}
+
+#filterContainer {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0 0 0;
+  flex-wrap: wrap;
+}
+#filterContainer .filterWrapperLinks {
+  order: 1;
+  flex-basis: 100%;
+  display: flex;
+  gap: 1rem;
+}
+#filterContainer .filterWrapperLinks a.active {
+  color: black;
+}
+#filterContainer .filterWrapperLinks a span {
+  color: gray;
+}
+#filterContainer .filterWrapper {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+}
+#filterContainer .filterWrapper select {
+  width: max-content;
+}
+
+.resultCount {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+.goToPage span {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.goToPage .goToPageInput {
+  width: 90px;
+}
+
+td.status span {
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+td.status span.publish {
+  background: #36b9cc;
+  color: white;
+}
+td.status span.draft {
+  background: #b7b9cc;
+  color: white;
+}
+td.status span.private {
+  background: #f6c23e;
+  color: white;
+}
+td.status span.removed {
+  background: #e74a3b;
+  color: white;
+}
+td .editEntity {
+  background-color: unset;
+  border-color: transparent;
+  color: #858796;
+  box-shadow: unset;
+  text-decoration: underline;
+}
+td .editEntity:hover, td .editEntity:active, td .editEntity:focus {
+  text-decoration: underline;
+  background-color: unset !important;
+  box-shadow: unset !important;
+  border-color: transparent !important;
+  color: #858796 !important;
+}
+
+.selectRow {
+  width: 15px;
+  height: 15px;
+  display: block;
+  margin: 5px auto;
+}
+
+.bulkApplyButton,
+.bulkAction {
+  display: none !important;
+}
+.bulkApplyButton.show,
+.bulkAction.show {
+  display: inline-block !important;
+}
+
+.bulkAction.show {
+  width: 155px !important;
+}
+
+.selectAllRows {
+  display: none;
+}
+.selectAllRows.show {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  margin-top: 0.5rem;
+}
+
+table[data-js-page=Product] thead tr th:nth-of-type(17), table[data-js-page=Product] thead tr th:nth-of-type(16), table[data-js-page=Product] thead tr th:nth-of-type(2) {
+  display: none;
+}
+table[data-js-page=Product] #tableData tr td:nth-of-type(17), table[data-js-page=Product] #tableData tr td:nth-of-type(16), table[data-js-page=Product] #tableData tr td:nth-of-type(2) {
+  display: none;
+}
+
+table[data-js-page=Attribute] thead tr th:nth-of-type(5) {
+  display: none;
+}
+table[data-js-page=Attribute] #tableData tr td:nth-of-type(5) {
+  display: none;
+}
+
+#crudTable td button {
+  word-break: break-word;
+}
+
+.searchOptions label {
+  display: block;
+  margin-top: 0.5em;
+}
+.searchOptions select {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #4e73df;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  z-index: 999;
+  opacity: 1;
+}
+#loader.small {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4e73df;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.searchContainer {
+  max-width: 250px;
+  position: relative;
+}
+.searchContainer .chevron::before {
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  position: absolute;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 8px;
+  right: 35px;
+  top: 14px;
+  pointer-events: none;
+  color: #4e73df;
+}
+.searchContainer label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.searchContainer input {
+  margin-bottom: 0.5rem;
+}
+.searchContainer .nameInput {
+  cursor: pointer;
+}
+.searchContainer .nameInput.focused {
+  outline: 2px solid #4e73df;
+}
+.searchContainer #entityOptions {
+  scrollbar-width: 7px;
+  scrollbar-color: #4e73df;
+  position: absolute;
+  z-index: 1;
+  background: white;
+  height: 200px;
+  width: 100%;
+  overflow-y: auto;
+  outline: 1px solid #d1d3e2;
+  border-radius: 0.35rem;
+  margin-top: 0.35rem;
+}
+.searchContainer #entityOptions::-webkit-scrollbar {
+  width: 7px;
+}
+.searchContainer #entityOptions::-webkit-scrollbar-track {
+  background: white; /* color of the tracking area */
+}
+.searchContainer #entityOptions::-webkit-scrollbar-thumb {
+  background-color: #4e73df; /* color of the scroll thumb */
+  border-radius: 1px; /* roundness of the scroll thumb */
+  /* border: 1px solid #000066;  */ /* creates padding around scroll thumb */
+}
+.searchContainer #entityOptions .entityOption {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.searchContainer #entityOptions .entityOption:hover {
+  background-color: #4e73df;
+  color: white;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.searchContainer #entityOptions #noMoreMessage {
+  display: block;
+  text-align: center;
+}
+.searchContainer #loaderAjax {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 170px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #4e73df;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  z-index: 999;
+  opacity: 1;
+}
+.searchContainer #searchInputContainer {
+  position: relative;
+}
+.searchContainer #searchInputContainer svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  margin: auto;
+  right: 10px;
+}
+
+.formFieldNotice {
+  display: block;
+  color: var(--error);
+  position: absolute;
+}
+
+.invalidFormField {
+  border: 1px solid var(--error);
+}
+.invalidFormField:focus {
+  border-color: var(--error);
+  box-shadow: 0 0 0 0.2rem rgba(var(--errorShadow), 0.5);
+}
+
+#tabbedContentContainer.marginTopTabbed {
+  margin-top: 2rem;
+}
+#tabbedContentContainer #tabs {
+  display: flex;
+}
+#tabbedContentContainer #tabs .tab {
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  border: 1px solid var(--lightGray);
+  transition: 0.3s ease all;
+}
+#tabbedContentContainer #tabs .tab.active, #tabbedContentContainer #tabs .tab:hover {
+  background: var(--mainColor);
+  color: white;
+  border: 1px solid var(--mainColor);
+  border-top-right-radius: 12px;
+}
+#tabbedContentContainer #tabContent {
+  position: relative;
+  background: white;
+  overflow-y: auto;
+  padding: 1rem;
+  min-height: 600px;
+}
+
+.dummyContainer,
+#attributeCollection,
+#groupCollection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+.dummyContainer .dummySingleContainer,
+#attributeCollection .dummySingleContainer,
+#groupCollection .dummySingleContainer {
+  padding: 0.4rem 0.5rem 0.4rem 0.9rem;
+  background: #4e73df;
+  color: white;
+  border-radius: 0.35rem;
+  display: flex;
+}
+.dummyContainer .dummySingleContainer .dummy,
+#attributeCollection .dummySingleContainer .dummy,
+#groupCollection .dummySingleContainer .dummy {
+  margin-right: 0.5rem;
+  line-height: 28px;
+  font-weight: bold;
+}
+.dummyContainer .dummySingleContainer .deleteDummy,
+#attributeCollection .dummySingleContainer .deleteDummy,
+#groupCollection .dummySingleContainer .deleteDummy {
+  cursor: pointer;
+}
+.dummyContainer .dummySingleContainer .deleteDummy:hover svg,
+#attributeCollection .dummySingleContainer .deleteDummy:hover svg,
+#groupCollection .dummySingleContainer .deleteDummy:hover svg {
+  color: white;
+  fill: #e74a3b;
+}
+.dummyContainer .dummySingleContainer .deleteDummy svg,
+#attributeCollection .dummySingleContainer .deleteDummy svg,
+#groupCollection .dummySingleContainer .deleteDummy svg {
+  transition: 0.3s ease all;
+  fill: transparent;
+  pointer-events: none;
+  width: 22px;
+}
+
+#marginRulesContainer {
+  margin-top: 1rem;
+}
+#marginRulesContainer #addRule,
+#marginRulesContainer #addGroup {
+  margin-bottom: 1rem;
+}
+#marginRulesContainer .form-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+#marginRulesContainer .form-group .deleteMargin {
+  cursor: pointer;
+}
+#marginRulesContainer .form-group .deleteMargin svg {
+  pointer-events: none;
+  width: 24px;
+  color: red;
+}
+
+.productTabbedRight {
+  width: 700px;
+}
+.productTabbedRight #createNewAttribute {
+  margin-bottom: 0.5rem;
+}
+.productTabbedRight .groupAttributes {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.productTabbedRight .groupAttributes select {
+  max-width: 200px;
+}
+
+#editingProducts {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #eaecf4;
+  border-radius: 5px;
+}
+#editingProducts > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+#editingProducts > div .deleteProductFromEdit {
+  cursor: pointer;
+}
+#editingProducts > div .deleteProductFromEdit svg {
+  width: 24px;
+  color: red;
+  pointer-events: none;
+}
+
+#featuredMediaUpload, #galleryImageUpload {
+  width: 100px;
+  height: 100px;
+  background: var(--mainColor);
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+}
+#featuredMediaUpload .uploadText, #galleryImageUpload .uploadText {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+  pointer-events: none;
+}
+
+#fileInput, #multipleFileInput {
+  top: 0;
+  left: 0;
+}
+
+#preview, #galleryPreview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+#preview .previewImage, #galleryPreview .previewImage {
+  width: 150px;
+  height: 150px;
+}
+#preview .previewImage img, #galleryPreview .previewImage img {
+  width: 100%;
+  object-fit: contain;
+  height: 150px;
+}
+
+#attributes {
+  padding-right: 5px;
+  height: 880px;
+}
+#attributes.bulkAttributesContainer {
+  height: auto;
+}
+#attributes .productAttributeWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+#attributes .productAttributeWrapper .attributeName {
+  background: lightgray;
+  width: max-content;
+}
+#attributes .productAttributeWrapper .attributeName:focus {
+  background: none !important;
+  border-color: unset !important;
+  background: lightgray !important;
+  box-shadow: unset !important;
+}
+#attributes .productAttributeWrapper .deleteProductAttribute {
+  cursor: pointer;
+}
+#attributes .productAttributeWrapper .deleteProductAttribute svg {
+  pointer-events: none;
+  width: 24px;
+  fill: white;
+  color: var(--mainColor);
+}
+
+#bulkEditContainer .categorySearchInputContainer .scrollableContainerCustomHeight {
+  width: 250% !important;
+}
+#bulkEditContainer .bulkAttributeDelete {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+#bulkEditContainer .bulkAttributeDelete .deleteAttributeBulk {
+  cursor: pointer;
+}
+#bulkEditContainer .bulkAttributeDelete .deleteAttributeBulk svg {
+  width: 24px;
+  color: red;
+  pointer-events: none;
+}
+#bulkEditContainer .scrollableContainerCustomHeight {
+  max-height: 450px;
+  padding: 1rem;
+}
+
+#includeAttributesContainer,
+#excludeAttributesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+#includeAttributesContainer #addIncludeAttributes,
+#includeAttributesContainer #addExcludeAttributes,
+#excludeAttributesContainer #addIncludeAttributes,
+#excludeAttributesContainer #addExcludeAttributes {
+  cursor: pointer;
+  width: max-content;
+}
+#includeAttributesContainer #addIncludeAttributes svg,
+#includeAttributesContainer #addExcludeAttributes svg,
+#excludeAttributesContainer #addIncludeAttributes svg,
+#excludeAttributesContainer #addExcludeAttributes svg {
+  pointer-events: none;
+  transition: 0.3s ease all;
+  color: var(--mainColor);
+  width: 24px;
+}
+#includeAttributesContainer #addIncludeAttributes:hover svg,
+#includeAttributesContainer #addExcludeAttributes:hover svg,
+#excludeAttributesContainer #addIncludeAttributes:hover svg,
+#excludeAttributesContainer #addExcludeAttributes:hover svg {
+  color: var(--success);
+}
+#includeAttributesContainer .selectAttributeContainer,
+#excludeAttributesContainer .selectAttributeContainer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+#includeAttributesContainer .includeExcludeDelete,
+#excludeAttributesContainer .includeExcludeDelete {
+  cursor: pointer;
+}
+#includeAttributesContainer .includeExcludeDelete svg,
+#excludeAttributesContainer .includeExcludeDelete svg {
+  color: red;
+  pointer-events: none;
+  width: 24px;
+}
+
+#includeExcludeButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#attributeSelect {
+  margin: 1rem 0 0 0;
+}
+
+#attributeSearchContainer .scrollableContainerCustomHeight {
+  position: absolute;
+  top: 120px;
+  height: 250px;
+  border: 1px solid #d1d3e2;
+  width: 200%;
+  z-index: 9999999;
+  background: white;
+  border-radius: 0.35rem;
+}
+#attributeSearchContainer .scrollableContainerCustomHeight p {
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin: 0;
+  padding: 0.5rem;
+}
+#attributeSearchContainer .scrollableContainerCustomHeight p:hover {
+  color: white;
+  background: var(--mainColor);
+}
+#attributeSearchContainer .searchAttributesButton {
+  width: 22px;
+  margin-bottom: 1rem;
+}
+
+#addAttributeFromSelect {
+  margin-bottom: 0.5rem !important;
+}
+
+.productAttributeComponent {
+  border: 1px solid #d1d3e2;
+  border-radius: 7px;
+  background: white;
+  transition: 0.3s ease height;
+  height: 55px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.productAttributeComponent.expand {
+  height: 300px;
+}
+.productAttributeComponent header {
+  padding: 0.5rem;
+  border-bottom: 1px solid #d1d3e2;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+.productAttributeComponent header .name {
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+}
+.productAttributeComponent header .delete {
+  color: var(--red);
+}
+.productAttributeComponent .contentBody {
+  padding: 1rem;
+  position: relative;
+}
+.productAttributeComponent .contentBody .contentBodyWrapper {
+  display: flex;
+  gap: 2rem;
+}
+.productAttributeComponent .contentBody .contentBodyWrapper button {
+  width: 150px;
+}
+.productAttributeComponent .contentBody .scrollableContainerCustomHeight {
+  height: 150px;
+  position: absolute;
+  top: 60px;
+  width: calc(100% - 33px);
+  border: 1px solid #d1d3e2;
+  z-index: 9;
+  background: white;
+}
+.productAttributeComponent .contentBody .scrollableContainerCustomHeight p {
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin: 0;
+  padding: 0.5rem;
+}
+.productAttributeComponent .contentBody .scrollableContainerCustomHeight p:hover {
+  color: white;
+  background: var(--mainColor);
+}
+.productAttributeComponent .contentBody .scrollableContainerCustomHeight p.disabled {
+  background: lightgray;
+  color: white;
+  pointer-events: none;
+}
+.productAttributeComponent .contentBody .attributeValuesList.scrollableContainerCustomHeight {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  height: 170px;
+  padding: 0.5rem;
+}
+.productAttributeComponent .contentBody .attributeValuesList.scrollableContainerCustomHeight .inputRepresentation {
+  display: flex;
+  width: max-content;
+  gap: 5px;
+  cursor: pointer;
+  background: var(--mainColor);
+  color: white;
+  padding: 0.5rem;
+}
+.productAttributeComponent .contentBody .attributeValuesList.scrollableContainerCustomHeight .inputRepresentation > div {
+  height: max-content;
+}
+.productAttributeComponent .contentBody .attributeValuesList.scrollableContainerCustomHeight .inputRepresentation > div:hover svg {
+  color: red;
+}
+.productAttributeComponent .contentBody .attributeValuesList.scrollableContainerCustomHeight .inputRepresentation svg {
+  width: 24px;
+  pointer-events: none;
+  color: white;
+}
+
+#attributeLoader {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #4e73df;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  z-index: 999;
+  opacity: 1;
+}
+#attributeLoader.small {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4e73df;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.attributeTab {
+  position: relative;
+}
+
+#attributeValueLoader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #4e73df;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  z-index: 999;
+  opacity: 1;
+}
+#attributeValueLoader.small {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4e73df;
+}
+
+#tagsContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+#tagsContainer .tagContainer {
+  width: max-content;
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 7px;
+  display: flex;
+  gap: 1rem;
+}
+#tagsContainer .tagContainer .deleteTag {
+  cursor: pointer;
+}
+#tagsContainer .tagContainer .deleteTag svg {
+  pointer-events: none;
+  color: red;
+  width: 24px;
+}
+
+#bulkTagsToDelete {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+#bulkTagsToDelete .deleteTagBulkEntity {
+  width: max-content;
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 7px;
+  display: flex;
+  gap: 1rem;
+}
+#bulkTagsToDelete .deleteTagBulkEntity .tagToDelete {
+  color: white;
+}
+#bulkTagsToDelete .deleteTagBulkEntity .deleteTagBulk {
+  cursor: pointer;
+}
+#bulkTagsToDelete .deleteTagBulkEntity .deleteTagBulk svg {
+  pointer-events: none;
+  color: red;
+  width: 24px;
+}
+
+#tagsToBeAddedContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+#tagsToBeAddedContainer .tagToBeAddedEntity {
+  width: max-content;
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 7px;
+  display: flex;
+  gap: 1rem;
+}
+#tagsToBeAddedContainer .tagToBeAddedEntity .tagToBeAddedInner {
+  color: white;
+}
+#tagsToBeAddedContainer .tagToBeAddedEntity .deleteTagToBeAdded {
+  cursor: pointer;
+}
+#tagsToBeAddedContainer .tagToBeAddedEntity .deleteTagToBeAdded svg {
+  pointer-events: none;
+  color: red;
+  width: 24px;
+}
+
+.productView #filterContainer .filterWrapper:last-child {
+  display: none;
+}
+.productView #crudTable .instock {
+  background-color: var(--success);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+.productView #crudTable .outofstock {
+  background-color: var(--error);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+#categoryForm #mediaUpload {
+  width: 100px;
+  height: 100px;
+  background: var(--mainColor);
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+}
+#categoryForm #mediaUpload .uploadText {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+  pointer-events: none;
+}
+#categoryForm #fileInput {
+  top: 0;
+  left: 0;
+}
+#categoryForm #preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+#categoryForm #preview .previewImage {
+  width: 150px;
+  height: 150px;
+}
+#categoryForm #preview .previewImage img {
+  width: 100%;
+  object-fit: contain;
+  height: 150px;
+}
+
+.windowOnDragTargetClass {
+  background: #1cc88a !important;
+}
+
+.onTargetDragOverClass {
+  opacity: 0.5;
+}
+
+.searchCategoryContainer,
+.attributeGroupFormGroup .searchAttributeContainer,
+.searchGroupContainer,
+.searchTagsContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  width: max-content;
+}
+.searchCategoryContainer .searchCategory,
+.searchCategoryContainer .searchAttributes,
+.searchCategoryContainer .searchGroup,
+.searchCategoryContainer .searchTags,
+.attributeGroupFormGroup .searchAttributeContainer .searchCategory,
+.attributeGroupFormGroup .searchAttributeContainer .searchAttributes,
+.attributeGroupFormGroup .searchAttributeContainer .searchGroup,
+.attributeGroupFormGroup .searchAttributeContainer .searchTags,
+.searchGroupContainer .searchCategory,
+.searchGroupContainer .searchAttributes,
+.searchGroupContainer .searchGroup,
+.searchGroupContainer .searchTags,
+.searchTagsContainer .searchCategory,
+.searchTagsContainer .searchAttributes,
+.searchTagsContainer .searchGroup,
+.searchTagsContainer .searchTags {
+  cursor: pointer;
+}
+.searchCategoryContainer .searchCategory svg,
+.searchCategoryContainer .searchAttributes svg,
+.searchCategoryContainer .searchGroup svg,
+.searchCategoryContainer .searchTags svg,
+.attributeGroupFormGroup .searchAttributeContainer .searchCategory svg,
+.attributeGroupFormGroup .searchAttributeContainer .searchAttributes svg,
+.attributeGroupFormGroup .searchAttributeContainer .searchGroup svg,
+.attributeGroupFormGroup .searchAttributeContainer .searchTags svg,
+.searchGroupContainer .searchCategory svg,
+.searchGroupContainer .searchAttributes svg,
+.searchGroupContainer .searchGroup svg,
+.searchGroupContainer .searchTags svg,
+.searchTagsContainer .searchCategory svg,
+.searchTagsContainer .searchAttributes svg,
+.searchTagsContainer .searchGroup svg,
+.searchTagsContainer .searchTags svg {
+  pointer-events: none;
+  width: 16px;
+}
+.searchCategoryContainer .categorySearchInputContainer,
+.searchCategoryContainer .attributeSearchInputContainer,
+.searchCategoryContainer .groupSearchInputContainer,
+.searchCategoryContainer .tagsSearchInputContainer,
+.attributeGroupFormGroup .searchAttributeContainer .categorySearchInputContainer,
+.attributeGroupFormGroup .searchAttributeContainer .attributeSearchInputContainer,
+.attributeGroupFormGroup .searchAttributeContainer .groupSearchInputContainer,
+.attributeGroupFormGroup .searchAttributeContainer .tagsSearchInputContainer,
+.searchGroupContainer .categorySearchInputContainer,
+.searchGroupContainer .attributeSearchInputContainer,
+.searchGroupContainer .groupSearchInputContainer,
+.searchGroupContainer .tagsSearchInputContainer,
+.searchTagsContainer .categorySearchInputContainer,
+.searchTagsContainer .attributeSearchInputContainer,
+.searchTagsContainer .groupSearchInputContainer,
+.searchTagsContainer .tagsSearchInputContainer {
+  position: relative;
+}
+.searchCategoryContainer .categorySearchInputContainer .scrollableContainerCustomHeight,
+.searchCategoryContainer .attributeSearchInputContainer .scrollableContainerCustomHeight,
+.searchCategoryContainer .groupSearchInputContainer .scrollableContainerCustomHeight,
+.searchCategoryContainer .tagsSearchInputContainer .scrollableContainerCustomHeight,
+.attributeGroupFormGroup .searchAttributeContainer .categorySearchInputContainer .scrollableContainerCustomHeight,
+.attributeGroupFormGroup .searchAttributeContainer .attributeSearchInputContainer .scrollableContainerCustomHeight,
+.attributeGroupFormGroup .searchAttributeContainer .groupSearchInputContainer .scrollableContainerCustomHeight,
+.attributeGroupFormGroup .searchAttributeContainer .tagsSearchInputContainer .scrollableContainerCustomHeight,
+.searchGroupContainer .categorySearchInputContainer .scrollableContainerCustomHeight,
+.searchGroupContainer .attributeSearchInputContainer .scrollableContainerCustomHeight,
+.searchGroupContainer .groupSearchInputContainer .scrollableContainerCustomHeight,
+.searchGroupContainer .tagsSearchInputContainer .scrollableContainerCustomHeight,
+.searchTagsContainer .categorySearchInputContainer .scrollableContainerCustomHeight,
+.searchTagsContainer .attributeSearchInputContainer .scrollableContainerCustomHeight,
+.searchTagsContainer .groupSearchInputContainer .scrollableContainerCustomHeight,
+.searchTagsContainer .tagsSearchInputContainer .scrollableContainerCustomHeight {
+  position: absolute;
+  top: 50px;
+  height: 250px;
+  border: 1px solid #d1d3e2;
+  width: 300%;
+  z-index: 9999999;
+  background: white;
+  border-radius: 0.35rem;
+}
+.searchCategoryContainer .categorySearchInputContainer .scrollableContainerCustomHeight p,
+.searchCategoryContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p,
+.searchCategoryContainer .groupSearchInputContainer .scrollableContainerCustomHeight p,
+.searchCategoryContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p,
+.attributeGroupFormGroup .searchAttributeContainer .categorySearchInputContainer .scrollableContainerCustomHeight p,
+.attributeGroupFormGroup .searchAttributeContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p,
+.attributeGroupFormGroup .searchAttributeContainer .groupSearchInputContainer .scrollableContainerCustomHeight p,
+.attributeGroupFormGroup .searchAttributeContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p,
+.searchGroupContainer .categorySearchInputContainer .scrollableContainerCustomHeight p,
+.searchGroupContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p,
+.searchGroupContainer .groupSearchInputContainer .scrollableContainerCustomHeight p,
+.searchGroupContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p,
+.searchTagsContainer .categorySearchInputContainer .scrollableContainerCustomHeight p,
+.searchTagsContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p,
+.searchTagsContainer .groupSearchInputContainer .scrollableContainerCustomHeight p,
+.searchTagsContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p {
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin: 0;
+  padding: 0.5rem;
+}
+.searchCategoryContainer .categorySearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchCategoryContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchCategoryContainer .groupSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchCategoryContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.attributeGroupFormGroup .searchAttributeContainer .categorySearchInputContainer .scrollableContainerCustomHeight p:hover,
+.attributeGroupFormGroup .searchAttributeContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.attributeGroupFormGroup .searchAttributeContainer .groupSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.attributeGroupFormGroup .searchAttributeContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchGroupContainer .categorySearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchGroupContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchGroupContainer .groupSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchGroupContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchTagsContainer .categorySearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchTagsContainer .attributeSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchTagsContainer .groupSearchInputContainer .scrollableContainerCustomHeight p:hover,
+.searchTagsContainer .tagsSearchInputContainer .scrollableContainerCustomHeight p:hover {
+  color: white;
+  background: var(--mainColor);
+}
+
+#externalMappingForm .row {
+  align-items: baseline;
+}
+
+#pagination {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+}
+#pagination .btn.activePagination {
+  color: #fff;
+  background-color: #1cc88a;
+  border-color: #1cc88a;
+}
+
+#searchSource {
+  width: 300px;
+}
+
+#includeExcludeButton {
+  display: block;
+  margin: 1rem 0;
+  font-size: 12px;
+}
+
+#resetIncludeExclude {
+  font-size: 12px;
+}
+
+.secondDescriptionAttributeDelete {
+  position: absolute;
+  right: -35px;
+  width: 25px;
+  color: red;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  cursor: pointer;
+}
+.secondDescriptionAttributeDelete svg {
+  pointer-events: none;
+}
+
+table[data-js-page=Attribute-values] thead tr th:nth-of-type(1) {
+  display: none;
+}
+table[data-js-page=Attribute-values] #tableData tr td:nth-of-type(1) {
+  display: none;
+}
+
+.searchAttributesButtonContainer svg {
+  width: 24px;
+  height: 24px;
+}
+.searchAttributesButtonContainer .scrollableContainerCustomHeight {
+  height: 250px;
+}
+.searchAttributesButtonContainer .scrollableContainerCustomHeight p {
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin: 0;
+  padding: 0.5rem;
+}
+.searchAttributesButtonContainer .scrollableContainerCustomHeight p:hover {
+  color: white;
+  background: var(--mainColor);
+}
+
+#imageMediaUpload {
+  width: 100px;
+  height: 100px;
+  background: var(--mainColor);
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+}
+#imageMediaUpload .uploadText {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+  pointer-events: none;
+}
+
+#preview .previewImage {
+  position: relative;
+}
+#preview .containerIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.searchContent,
+.searchContentAttrValues,
+.selectWithSearchCBOS,
+.searchIconWrapperFilter,
+.searchAttributeContentAABOS,
+.searchAttributeValueContentAABOS {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.searchContent .searchContainer,
+.searchContentAttrValues .searchContainer,
+.selectWithSearchCBOS .searchContainer,
+.searchIconWrapperFilter .searchContainer,
+.searchAttributeContentAABOS .searchContainer,
+.searchAttributeValueContentAABOS .searchContainer {
+  max-width: 250px;
+  position: absolute;
+  top: -52px;
+  left: -190px;
+  width: 300px;
+}
+.searchContent .searchContainer .resultsContainer,
+.searchContentAttrValues .searchContainer .resultsContainer,
+.selectWithSearchCBOS .searchContainer .resultsContainer,
+.searchIconWrapperFilter .searchContainer .resultsContainer,
+.searchAttributeContentAABOS .searchContainer .resultsContainer,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer {
+  max-width: 250px;
+  width: 250px;
+  background: white;
+  z-index: 99;
+  max-height: 200px;
+  overflow-y: auto;
+  /* Track */
+  /* Handle */
+}
+.searchContent .searchContainer .resultsContainer::-webkit-scrollbar,
+.searchContentAttrValues .searchContainer .resultsContainer::-webkit-scrollbar,
+.selectWithSearchCBOS .searchContainer .resultsContainer::-webkit-scrollbar,
+.searchIconWrapperFilter .searchContainer .resultsContainer::-webkit-scrollbar,
+.searchAttributeContentAABOS .searchContainer .resultsContainer::-webkit-scrollbar,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.searchContent .searchContainer .resultsContainer::-webkit-scrollbar-track,
+.searchContentAttrValues .searchContainer .resultsContainer::-webkit-scrollbar-track,
+.selectWithSearchCBOS .searchContainer .resultsContainer::-webkit-scrollbar-track,
+.searchIconWrapperFilter .searchContainer .resultsContainer::-webkit-scrollbar-track,
+.searchAttributeContentAABOS .searchContainer .resultsContainer::-webkit-scrollbar-track,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+.searchContent .searchContainer .resultsContainer::-webkit-scrollbar-thumb,
+.searchContentAttrValues .searchContainer .resultsContainer::-webkit-scrollbar-thumb,
+.selectWithSearchCBOS .searchContainer .resultsContainer::-webkit-scrollbar-thumb,
+.searchIconWrapperFilter .searchContainer .resultsContainer::-webkit-scrollbar-thumb,
+.searchAttributeContentAABOS .searchContainer .resultsContainer::-webkit-scrollbar-thumb,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer::-webkit-scrollbar-thumb {
+  background: #4e73df;
+  border-radius: 10px;
+}
+.searchContent .searchContainer .resultsContainer.show,
+.searchContentAttrValues .searchContainer .resultsContainer.show,
+.selectWithSearchCBOS .searchContainer .resultsContainer.show,
+.searchIconWrapperFilter .searchContainer .resultsContainer.show,
+.searchAttributeContentAABOS .searchContainer .resultsContainer.show,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer.show {
+  border: 1px solid var(--primary);
+  border-radius: 7px;
+}
+.searchContent .searchContainer .resultsContainer .searchResult,
+.searchContentAttrValues .searchContainer .resultsContainer .searchResult,
+.selectWithSearchCBOS .searchContainer .resultsContainer .searchResult,
+.searchIconWrapperFilter .searchContainer .resultsContainer .searchResult,
+.searchAttributeContentAABOS .searchContainer .resultsContainer .searchResult,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer .searchResult {
+  cursor: pointer;
+  transition: 0.3s ease all;
+  padding: 0.5rem;
+  position: relative;
+}
+.searchContent .searchContainer .resultsContainer .searchResult:first-child,
+.searchContentAttrValues .searchContainer .resultsContainer .searchResult:first-child,
+.selectWithSearchCBOS .searchContainer .resultsContainer .searchResult:first-child,
+.searchIconWrapperFilter .searchContainer .resultsContainer .searchResult:first-child,
+.searchAttributeContentAABOS .searchContainer .resultsContainer .searchResult:first-child,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer .searchResult:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.searchContent .searchContainer .resultsContainer .searchResult:last-child,
+.searchContentAttrValues .searchContainer .resultsContainer .searchResult:last-child,
+.selectWithSearchCBOS .searchContainer .resultsContainer .searchResult:last-child,
+.searchIconWrapperFilter .searchContainer .resultsContainer .searchResult:last-child,
+.searchAttributeContentAABOS .searchContainer .resultsContainer .searchResult:last-child,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer .searchResult:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.searchContent .searchContainer .resultsContainer .searchResult:hover,
+.searchContentAttrValues .searchContainer .resultsContainer .searchResult:hover,
+.selectWithSearchCBOS .searchContainer .resultsContainer .searchResult:hover,
+.searchIconWrapperFilter .searchContainer .resultsContainer .searchResult:hover,
+.searchAttributeContentAABOS .searchContainer .resultsContainer .searchResult:hover,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer .searchResult:hover {
+  background: var(--primary);
+  color: white;
+}
+.searchContent .searchContainer .resultsContainer .alert-danger,
+.searchContentAttrValues .searchContainer .resultsContainer .alert-danger,
+.selectWithSearchCBOS .searchContainer .resultsContainer .alert-danger,
+.searchIconWrapperFilter .searchContainer .resultsContainer .alert-danger,
+.searchAttributeContentAABOS .searchContainer .resultsContainer .alert-danger,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer .alert-danger {
+  padding: 0.5rem;
+}
+.searchContent .searchContainer .resultsContainer .loaderAjaxSearch,
+.searchContentAttrValues .searchContainer .resultsContainer .loaderAjaxSearch,
+.selectWithSearchCBOS .searchContainer .resultsContainer .loaderAjaxSearch,
+.searchIconWrapperFilter .searchContainer .resultsContainer .loaderAjaxSearch,
+.searchAttributeContentAABOS .searchContainer .resultsContainer .loaderAjaxSearch,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer .loaderAjaxSearch {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #4e73df;
+  width: 38px;
+  height: 38px;
+  -webkit-animation: spinAjaxLoader 2s linear infinite; /* Safari */
+  animation: spinAjaxLoader 2s linear infinite;
+  z-index: 999;
+  opacity: 1;
+}
+.searchContent .searchContainer .resultsContainer .loaderAjaxSearch.small,
+.searchContentAttrValues .searchContainer .resultsContainer .loaderAjaxSearch.small,
+.selectWithSearchCBOS .searchContainer .resultsContainer .loaderAjaxSearch.small,
+.searchIconWrapperFilter .searchContainer .resultsContainer .loaderAjaxSearch.small,
+.searchAttributeContentAABOS .searchContainer .resultsContainer .loaderAjaxSearch.small,
+.searchAttributeValueContentAABOS .searchContainer .resultsContainer .loaderAjaxSearch.small {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4e73df;
+}
+@keyframes spinAjaxLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.resultsContainer {
+  position: absolute;
+  top: 40px;
+  width: 230px;
+  z-index: 99;
+}
+.resultsContainer ul {
+  list-style: none;
+  border: 1px solid var(--mainColor);
+  overflow-y: auto;
+  padding: 0;
+  background-color: white;
+}
+.resultsContainer ul li {
+  border-bottom: 1px solid #ccc;
+  padding-left: 2px;
+}
+.resultsContainer ul li:hover {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+.searchInputs {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: fit-content;
+  flex-wrap: wrap;
+  color: white;
+}
+.searchInputs div {
+  background-color: var(--mainColor);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.searchInputs .removeResult {
+  cursor: pointer;
+}
+.searchInputs .removeResult svg {
+  pointer-events: none;
+}
+.searchInputs .removeResult:hover svg {
+  color: red;
+}
+
+.placeholderLabel {
+  height: 24px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+#attributeIframeModal {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  display: none;
+}
+#attributeIframeModal.show {
+  display: block;
+}
+#attributeIframeModal iframe {
+  width: 100%;
+  height: 100%;
+}
+#attributeIframeModal #closeIframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+#attributeIframeModal #closeIframe svg {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+select[name=localAttributeValueFilter] {
+  width: 300px !important;
+}
+
+.deleteLocalAttribute {
+  margin-top: auto;
+}
+
+.imagePreviewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+.imagePreviewContainer img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0.5rem auto;
+}
+.imagePreviewContainer .removeImagePreviewContainer {
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+  background: var(--error);
+  color: white;
+  transition: 0.3s ease all;
+}
+.imagePreviewContainer .removeImagePreviewContainer:hover {
+  background: red;
+}
+
+:root {
+  --mainBlue: #4e73df;
+  --mainDarkBlue:#485fa5;
+  --mainBlueLight: #bac8f3;
+  --textColorAlt: #6e707e;
+  --grayDark: #D8D8D8;
+  --error: #e74a3b ;
+}
+
+#mediaLibraryNavigation {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+}
+#mediaLibraryNavigation svg {
+  pointer-events: none;
+  fill: rgba(255, 255, 255, 0.3);
+  width: 22px;
+}
+#mediaLibraryNavigation span {
+  color: white;
+  font-size: 0.65rem;
+}
+#mediaLibraryNavigation:hover svg {
+  fill: white;
+}
+
+.mediaLibraryInput {
+  width: 75px;
+  color: var(--textColorAlt);
+  border-radius: 4px;
+  border: 1px solid var(--grayDark);
+  padding: 0.5rem;
+  font-size: 16px;
+}
+.mediaLibraryInput:focus {
+  color: var(--textColorAlt);
+  background-color: white;
+  outline: 1px solid var(--mainBlueLight);
+}
+
+.hidden {
+  display: none !important;
+}
+
+select option:disabled {
+  background: var(--grayDark);
+  color: white;
+}
+
+.mediaLibraryButton:not(#mediaLibraryNavigation), .mediaLibraryInitiator:not(#mediaLibraryNavigation) {
+  width: max-content;
+  background-color: var(--mainBlue);
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s ease background-color;
+}
+.mediaLibraryButton:not(#mediaLibraryNavigation):hover, .mediaLibraryInitiator:not(#mediaLibraryNavigation):hover {
+  background-color: var(--mainDarkBlue);
+}
+
+#mediaLibraryFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  position: relative;
+}
+#mediaLibraryFormContainer img {
+  width: 200px;
+  max-height: 150px;
+  height: auto;
+  object-fit: contain;
+}
+#mediaLibraryFormContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#mediaLibraryFormContainer form.loading {
+  pointer-events: none;
+  opacity: 0.5;
+}
+#mediaLibraryFormContainer form label {
+  color: var(--textColorAlt);
+}
+#mediaLibraryFormContainer form input {
+  width: 100%;
+}
+#mediaLibraryFormContainer form input[type=text]:read-only {
+  background: var(--grayDark);
+}
+#mediaLibraryFormContainer form input[type=submit] {
+  width: max-content;
+}
+#mediaLibraryFormContainer #deleteMediaButton {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+#mediaLibraryFormContainer #deleteMediaButton svg {
+  width: 18px;
+  fill: var(--error);
+  pointer-events: none;
+}
+
+#mediaLibraryModalOverlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+#mediaLibraryModalOverlay * {
+  box-sizing: border-box;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+#mediaLibraryModalOverlay *::-webkit-scrollbar {
+  width: 5px;
+}
+#mediaLibraryModalOverlay *::-webkit-scrollbar-track {
+  background: lightgray;
+  border-radius: 10px;
+}
+#mediaLibraryModalOverlay *::-webkit-scrollbar-thumb {
+  background: var(--mainBlue);
+  border-radius: 10px;
+}
+#mediaLibraryModalOverlay.show {
+  display: block;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: white;
+  overflow: hidden;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #closeMediaLibraryModalButton {
+  cursor: pointer;
+  width: 16px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #closeMediaLibraryModalButton svg {
+  pointer-events: none;
+  fill: gray;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalTopBar {
+  border-bottom: 1px solid lightgray;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalTopBar #uploadMediaButton {
+  cursor: pointer;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalTopBar #uploadMediaButton svg {
+  width: 18px;
+  fill: var(--mainBlue);
+  pointer-events: none;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalTopBar #mediaLibraryModalSearchInput {
+  width: 200px;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalTopBar #mediaLibraryModalDateFilter {
+  width: 150px;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer {
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+}
+@media (max-width: 1060px) {
+  #mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer {
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding-bottom: 5rem;
+  }
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryMainCellsContainer {
+  min-width: 50vw;
+  min-height: 300px;
+  max-height: calc(100% - 60px);
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  overflow-y: scroll;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryMainCellsContainer .mediaLibraryCell {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  cursor: pointer;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryMainCellsContainer .mediaLibraryCell.selected {
+  border: 2px solid var(--mainBlue);
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryMainCellsContainer .mediaLibraryCell img {
+  width: 100%;
+  object-fit: contain;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryModalSidebar {
+  position: relative;
+  min-width: 400px;
+}
+@media (max-width: 460px) {
+  #mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryModalSidebar {
+    min-width: 300px;
+  }
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryModalSidebar .mediaLibraryFormMessageContainer {
+  background: #1cc88a;
+  color: white;
+  padding: 0.5rem;
+  width: 300px;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #mediaLibraryModalMainContentContainer #mediaLibraryModalSidebar .mediaLibraryFormMessageContainer:empty {
+  padding: 0;
+}
+#mediaLibraryModalOverlay #mediaLibraryModalContainer #insertMedia {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.postEditor {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 1rem 0;
+}
+
+.valuesGeneratorContainer {
+  position: relative;
+}
+.valuesGeneratorContainer .valuesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.valuesGeneratorContainer .valuesContainer .valueSingleContainer {
+  display: flex;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background: var(--mainColor);
+}
+.valuesGeneratorContainer .valuesContainer .valueSingleContainer span {
+  color: white;
+}
+.valuesGeneratorContainer .valuesContainer .valueSingleContainer .deleteValue {
+  cursor: pointer;
+}
+.valuesGeneratorContainer .valuesContainer .valueSingleContainer .deleteValue svg {
+  pointer-events: none;
+  width: 20px;
+  color: var(--error);
+}
+.valuesGeneratorContainer .valuesGeneratorSearchResultsContainer {
+  position: absolute;
+  top: 70px;
+  width: 200px;
+  border: 1px solid var(--mainColor);
+  z-index: 999;
+  max-height: 200px;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.valuesGeneratorContainer .valuesGeneratorSearchResultsContainer::-webkit-scrollbar {
+  width: 5px;
+}
+.valuesGeneratorContainer .valuesGeneratorSearchResultsContainer::-webkit-scrollbar-track {
+  background: lightgray;
+  border-radius: 10px;
+}
+.valuesGeneratorContainer .valuesGeneratorSearchResultsContainer::-webkit-scrollbar-thumb {
+  background: var(--mainBlue);
+  border-radius: 10px;
+}
+.valuesGeneratorContainer .valuesGeneratorSearchResultsContainer .valuesGeneratorSearchResult {
+  background: white;
+  cursor: pointer;
+  border: 1px solid var(--lightGray);
+  transition: 0.3s ease all;
+  padding: 0.4rem;
+  font-size: 14px;
+}
+.valuesGeneratorContainer .valuesGeneratorSearchResultsContainer .valuesGeneratorSearchResult:hover {
+  background: var(--mainColor);
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+.buttonContainer {
+  width: max-content;
+  position: relative;
+  margin: 0 auto;
+}
+.buttonContainer .addNewBlock {
+  cursor: pointer;
+  border: 2px solid var(--customBlue);
+  border-radius: 50%;
+  padding: 4px 5px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+}
+.buttonContainer .addNewBlock:hover {
+  background: var(--customBlue);
+  transform: rotate(90deg);
+}
+.buttonContainer .addNewBlock:hover svg {
+  fill: white;
+}
+.buttonContainer .addNewBlock svg {
+  width: 16px;
+  pointer-events: none;
+  fill: var(--customBlue);
+  transition: 0.3s ease fill;
+}
+.buttonContainer .addNewBlock.active {
+  background: var(--customRed);
+  border: 2px solid var(--customRed);
+}
+.buttonContainer .addNewBlock.active svg {
+  fill: white;
+}
+.buttonContainer .blockListContainer {
+  display: none;
+  position: absolute;
+  width: 176px;
+  border: 2px solid var(--customLightGray);
+  border-radius: 4px;
+  min-height: 50px;
+  top: 2.5rem;
+  left: -70px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background: white;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.buttonContainer .blockListContainer.show {
+  display: flex;
+}
+.buttonContainer .blockListContainer .blockIcon {
+  display: flex;
+  cursor: pointer;
+  background: var(--customBlue);
+  padding: 0.3rem;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  box-sizing: border-box;
+  width: 27px;
+  height: 27px;
+  justify-content: center;
+}
+.buttonContainer .blockListContainer .blockIcon.hide {
+  display: none;
+}
+.buttonContainer .blockListContainer .blockIcon:hover {
+  background: var(--customGreen);
+}
+.buttonContainer .blockListContainer .blockIcon svg {
+  pointer-events: none;
+  fill: white;
+  width: 16px;
+}
+.buttonContainer .blockListContainer input {
+  width: 100%;
+  border: 1px solid var(--customLightGray);
+  border-radius: 4px;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+  color: var(--customGray);
+  z-index: 9999;
+}
+.buttonContainer .blockListContainer input:focus {
+  outline: 1px solid var(--customLightBlue);
+}
+
+
+:root {
+  --customBlue:#4e73df;
+  --customLightBlue:#bac8f3;
+  --customRed:#d9534f;
+  --customGreen:#1cc88a;
+  --customGray:#858796;
+  --customLightGray:#D8D8D8;
+  --mainDarkBlue:#485fa5;
+}
+
+.postEditor {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 1rem 0;
+}
+
+.embedBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.embedBlockContainer > .blockInputContainer {
+  flex: 1;
+}
+.embedBlockContainer textarea {
+  width: 100%;
+  border: 1px solid var(--customLightGray);
+  flex: 1;
+  max-height: 300px;
+  min-width: 300px;
+  display: block;
+  outline: none;
+  color: var(--customGray);
+  padding: 0.5rem;
+  align-self: flex-start;
+}
+@media (max-width: 500px) {
+  .embedBlockContainer textarea {
+    min-width: unset;
+  }
+}
+.embedBlockContainer textarea:focus {
+  border: 1px solid var(--customLightBlue);
+}
+.embedBlockContainer .embedPreviewContainer iframe {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.galleryBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+}
+.galleryBlockContainer .galleryImagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.galleryBlockContainer .insertImagesButton {
+  outline: none;
+  width: max-content;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--customBlue);
+  color: white;
+  transition: 0.3s ease background;
+}
+.galleryBlockContainer .insertImagesButton:hover {
+  background: var(--customGreen);
+}
+.galleryBlockContainer img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.imageBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+}
+.imageBlockContainer .insertImageButton {
+  width: max-content;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--customBlue);
+  color: white;
+  transition: 0.3s ease background;
+}
+.imageBlockContainer .insertImageButton:hover {
+  background: var(--customGreen);
+}
+.imageBlockContainer .imagePreviewContainer {
+  margin: 1rem auto;
+}
+
+.blocksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.blockContainer {
+  position: relative;
+}
+.blockContainer .toggleBlockActionsButton {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+}
+.blockContainer .toggleBlockActionsButton:hover svg {
+  fill: dimgray;
+}
+.blockContainer .toggleBlockActionsButton svg {
+  pointer-events: none;
+  transition: 0.3s ease fill;
+  width: 6px;
+  fill: gray;
+}
+.blockContainer .blockActionsContainer {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  width: max-content;
+  box-sizing: border-box;
+  border: 1px solid var(--customGray);
+  top: 0;
+  right: 0;
+  background: white;
+  z-index: 99;
+}
+.blockContainer .blockActionsContainer.show {
+  display: flex;
+}
+.blockContainer .blockActionsContainer .blockAction {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0.52rem;
+  color: var(--customGray);
+  transition: 0.3s ease all;
+  background: white;
+}
+.blockContainer .blockActionsContainer .blockAction:hover {
+  background: var(--customBlue);
+  color: white;
+}
+.blockContainer .blockActionsContainer .blockAction svg {
+  pointer-events: none;
+}
+.blockContainer .blockActionsContainer .blockAction.deleteBlockAction:hover {
+  background: var(--error);
+}
+.blockContainer .blockAnchor {
+  background: var(--customBlue);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.blockContainer .blockAnchor:hover {
+  background: var(--mainDarkBlue);
+}
+
+.blockInputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.blockInputElement {
+  color: dimgray;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  padding: 0.3rem;
+  font-size: 16px;
+}
+.blockInputElement:focus {
+  color: dimgray;
+  background-color: white;
+  outline: 1px solid var(--customLightBlue);
+}
+
+.blockButton {
+  width: max-content;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--customBlue);
+  color: white;
+  transition: 0.3s ease background;
+}
+.blockButton:hover {
+  background: var(--customGreen);
+}
+
+.hideBlockContainers .blockInputContainer {
+  display: none !important;
+}
+
+.toggleVisibility {
+  height: 0 !important;
+  overflow: hidden !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.textEditorContentContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+}
+.textEditorContentContainer:focus {
+  border: 1px solid lightgray;
+  outline: none;
+}
+.textEditorContentContainer .commandContainer {
+  display: none;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  background: white;
+}
+.textEditorContentContainer .commandContainer.show {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.textEditorContentContainer .commandContainer button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  background: var(--customBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.textEditorContentContainer .commandContainer button[title=justifyLeft] {
+  margin-left: 1rem;
+}
+.textEditorContentContainer .commandContainer button.active {
+  background: #1cc88a;
+}
+.textEditorContentContainer .commandContainer button svg {
+  width: 12px;
+  fill: white;
+}
+.textEditorContentContainer .textEditorContent:focus {
+  border: none;
+  outline: none;
+}
+.sliderBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+  min-height: 76px;
+}
+.sliderBlockContainer .slidesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sliderBlockContainer .deleteButton {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+.sliderBlockContainer .deleteButton svg {
+  width: 18px;
+  pointer-events: none;
+  fill: var(--error);
+}
+
+.entityListContainer {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.entityListContainer .valuesGeneratorContainer {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.entityListContainer .valuesGeneratorContainer .valuesGeneratorInput {
+  max-width: 200px;
+}
+
+.bannerBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+  display: flex;
+  gap: 1rem;
+  min-height: 76px;
+  flex-wrap: wrap;
+}
+.bannerBlockContainer .bannerButtonsContainer {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bannerBlockContainer .bannerButtonsContainer .blockButton {
+  margin: 1rem 0;
+}
+.bannerBlockContainer .bannerButtonsContainer .bannerDeleteButton {
+  cursor: pointer;
+  align-self: end;
+  margin-bottom: 0.5rem;
+}
+.bannerBlockContainer .bannerButtonsContainer .bannerDeleteButton svg {
+  width: 16px;
+  fill: var(--error);
+  pointer-events: none;
+}
+.bannerBlockContainer .bannerButtonsContainer .bannerButtonWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.bannerBlockContainer .bannerInsertImagePortrait,
+.bannerBlockContainer .bannerInsertImageLandscape {
+  width: max-content;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--customBlue);
+  color: white;
+  transition: 0.3s ease background;
+}
+.bannerBlockContainer .bannerInsertImagePortrait:hover,
+.bannerBlockContainer .bannerInsertImageLandscape:hover {
+  background: var(--customGreen);
+}
+.bannerBlockContainer textarea {
+  width: 500px;
+  height: 100px;
+  /* Track */
+  /* Handle */
+}
+.bannerBlockContainer textarea::-webkit-scrollbar {
+  width: 5px;
+}
+.bannerBlockContainer textarea::-webkit-scrollbar-track {
+  background: lightgray;
+  border-radius: 10px;
+}
+.bannerBlockContainer textarea::-webkit-scrollbar-thumb {
+  background: var(--mainBlue);
+  border-radius: 10px;
+}
+
+.personListBlockContainer {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.personListBlockContainer textarea {
+  width: 500px;
+}
+.personListBlockContainer .addButtonContainer {
+  flex-basis: 100%;
+}
+.personListBlockContainer .addButtonContainer .blockButton {
+  margin: 0;
+}
+.personListBlockContainer .personsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.personListBlockContainer .personsContainer .personContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+.personListBlockContainer .personsContainer .personContainer textarea {
+  width: 250px;
+}
+.personListBlockContainer .personsContainer .personContainer .personDeleteButton {
+  cursor: pointer;
+}
+.personListBlockContainer .personsContainer .personContainer .personDeleteButton svg {
+  width: 16px;
+  fill: var(--error);
+  pointer-events: none;
+}
+.personListBlockContainer .personsContainer .personContainer .imagePreviewContainer {
+  margin-top: 0;
+}
+.personListBlockContainer .personsContainer .personContainer .personImage {
+  width: max-content;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--customBlue);
+  color: white;
+  transition: 0.3s ease background;
+}
+.personListBlockContainer .personsContainer .personContainer .personImage:hover {
+  background: var(--customGreen);
+}
+.personListBlockContainer .personsContainer .personContainer .nameAndDescriptionInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.personListBlockContainer .personsContainer .personContainer .blockInputContainer label {
+  text-transform: capitalize;
+}
+
+.quoteBlockContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contentListContainer > .blockInputContainer > select {
+  width: 300px;
+}
+.contentListContainer > .blockButton {
+  margin: 1rem 0;
+}
+.contentListContainer .contentListContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contentListContainer .contentListContentContainer .contentEntityContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.contentListContainer .contentListContentContainer .contentEntityContainer textarea {
+  width: 400px;
+}
+.contentListContainer .contentListContentContainer .contentEntityContainer .deleteContentEntity {
+  cursor: pointer;
+}
+.contentListContainer .contentListContentContainer .contentEntityContainer .deleteContentEntity svg {
+  fill: red;
+  pointer-events: none;
+  width: 14px;
+}
+
+.headingBLockContainer {
+  display: flex;
+  gap: 1rem;
+}
+.headingBLockContainer .blockInputContainer:nth-of-type(2) {
+  flex: 1;
+}
+
+.blockListContainer {
+  z-index:999999
+}

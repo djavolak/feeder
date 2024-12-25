@@ -1,0 +1,54 @@
+{
+  "name": "greenfriends/ecomhelper",
+  "description": "ecomhelper",
+  "license": "proprietary",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "git",
+      "url" : "https://bitbucket.org/dj_avolak/skeletor"
+    }
+  ],
+  "require": {
+    "dj_avolak/skeletor": "4.x-dev",
+    "symfony/string": "^5",
+    "laminas/laminas-config": "*",
+    "laminas/laminas-session": "*",
+    "nesbot/carbon": "*",
+    "phpoffice/phpspreadsheet": "*",
+    "ramsey/collection": "^1.2",
+    "paquettg/php-html-parser": "2.2.1",
+    "php-webdriver/webdriver": "^1.11",
+    "ext-ftp": "*",
+    "ext-simplexml": "*",
+    "symfony/dom-crawler": "^6.0",
+    "macfja/tracy-doctrine-sql": "dev-master",
+    "symfony/css-selector": "^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0",
+    "phpmd/phpmd": "*",
+    "roave/security-advisories": "dev-master",
+    "rregeer/phpunit-coverage-check": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "EcomHelper\\Post\\": "packages/Post/src",
+      "EcomHelper\\Attribute\\": "packages/Attribute/src",
+      "EcomHelper\\Backend\\": "packages/Backend/src",
+      "EcomHelper\\Category\\": "packages/Category/src",
+      "EcomHelper\\Feeder\\": "packages/Feeder/src",
+      "EcomHelper\\Image\\": "packages/Image/src",
+      "EcomHelper\\Tenant\\": "packages/Tenant/src",
+      "EcomHelper\\Visitor\\": "packages/Visitor/src",
+      "EcomHelper\\Product\\": "packages/Product/src",
+      "EcomHelper\\MarginGroups\\": "packages/MarginGroups/src",
+      "EcomHelper\\Tag\\" : "packages/Tag/src",
+      "EcomHelper\\Gpt\\" : "packages/Gpt/src"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "bin-dir": "vendor/bin/"
+  }
+}

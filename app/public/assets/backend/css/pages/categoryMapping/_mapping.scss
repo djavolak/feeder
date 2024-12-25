@@ -1,0 +1,69 @@
+.searchCategoryContainer,
+.attributeGroupFormGroup .searchAttributeContainer,
+.searchGroupContainer,
+.searchTagsContainer {
+  display:flex;
+  gap:1rem;
+  margin-top:0.5rem;
+  width:max-content;
+  .searchCategory,
+  .searchAttributes,
+  .searchGroup,
+  .searchTags {
+    cursor: pointer;
+      svg {
+        pointer-events: none;
+        width: 16px;
+      }
+    }
+  .categorySearchInputContainer,
+  .attributeSearchInputContainer,
+  .groupSearchInputContainer,
+  .tagsSearchInputContainer, {
+    position:relative;
+    .scrollableContainerCustomHeight {
+      position:absolute;
+      top:50px;
+      height: 250px;
+      border: 1px solid #d1d3e2;
+      width: 300%;
+      z-index: 9999999;
+      background: white;
+      border-radius: 0.35rem;
+      p {
+        cursor:pointer;
+        transition: 0.3s ease all;
+        margin:0;
+        padding:0.5rem;
+        &:hover {
+          color:white;
+          background:var(--mainColor);
+        }
+      }
+    }
+  }
+}
+#externalMappingForm{
+  .row {
+    align-items: baseline;
+  }
+}
+
+#pagination {
+  display:flex;
+  gap:0.5rem;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin:1rem 0;
+    .btn {
+      &.activePagination {
+        color: #fff;
+        background-color: #1cc88a;
+        border-color: #1cc88a;
+      }
+    }
+}
+
+#searchSource {
+  width:300px;
+}

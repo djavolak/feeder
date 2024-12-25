@@ -1,0 +1,72 @@
+table[data-js-page="Attribute-values"] {
+  thead {
+    tr {
+      th {
+        &:nth-of-type(1) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #tableData {
+    tr {
+      td {
+        &:nth-of-type(1) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.searchAttributesButtonContainer {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .scrollableContainerCustomHeight {
+    height: 250px;
+    p {
+      cursor: pointer;
+      transition: 0.3s ease all;
+      margin: 0;
+      padding: 0.5rem;
+      &:hover {
+        color: white;
+        background: var(--mainColor);
+      }
+    }
+  }
+}
+#imageMediaUpload {
+  width: 100px;
+  height: 100px;
+  background: var(--mainColor);
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  .uploadText {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+    pointer-events: none;
+  }
+}
+#preview {
+  .previewImage {
+    position: relative;
+  }
+  .containerIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+}

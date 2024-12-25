@@ -1,0 +1,47 @@
+#mediaLibraryFormContainer {
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+  padding:0 1rem;
+  position:relative;
+  img {
+    width:200px;
+    max-height:150px;
+    height: auto;
+    object-fit: contain;
+  }
+  form {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    &.loading {
+      pointer-events: none;
+      opacity:0.5;
+    }
+    label {
+      color:var(--textColorAlt);
+    }
+    input {
+      width: 100%;
+      &[type='text'] {
+        &:read-only {
+          background: var(--grayDark);
+        }
+      }
+      &[type="submit"] {
+        width: max-content;
+      }
+    }
+  }
+  #deleteMediaButton {
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    right:1rem;
+    svg {
+      width:18px;
+      fill:var(--error);
+      pointer-events:none;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?php
+
+define('APP_PATH', __DIR__ . '/..');
+define('PUBLIC_PATH', __DIR__);
+define('DATA_PATH', __DIR__ . '/../data');
+define('IMAGES_PATH', __DIR__ . '/images');
+define('ADMIN_ASSET_PATH', __DIR__ . '/assets/admin');
+define('FRONT_ASSET_PATH', __DIR__ . '/assets/front');
+define('FRONT_ASSET_URL', strstr(FRONT_ASSET_PATH,'/assets'));
+define('ADMIN_ASSET_URL', strstr(ADMIN_ASSET_PATH,'/assets'));
+define('BASE_URL', 'http://its.local');
+define('DEBUG_BACKEND', true);
+define('DEBUG_FRONTEND', true);

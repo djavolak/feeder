@@ -1,0 +1,40 @@
+.embedBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+  display:flex;
+  gap:1rem;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  &>.blockInputContainer {
+    flex:1;
+  }
+  textarea {
+    width:100%;
+    border:1px solid var(--customLightGray);
+    flex:1;
+    max-height:300px;
+    min-width:300px;
+    display:block;
+    outline:none;
+    color: var(--customGray);
+    padding:0.5rem;
+    align-self:flex-start;
+    @media (max-width:500px) {
+      min-width:unset;
+    }
+    &:focus {
+      border:1px solid var(--customLightBlue);
+    }
+  }
+  .embedPreviewContainer {
+    iframe {
+      max-height:100%;
+      max-width:100%;
+    }
+  }
+}

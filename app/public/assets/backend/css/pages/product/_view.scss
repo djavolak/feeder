@@ -1,0 +1,23 @@
+.productView {
+  #filterContainer {
+    .filterWrapper {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  #crudTable {
+    .instock {
+      background-color:var(--success);
+      color:white;
+      padding: 0.5rem;
+      border-radius: 7px;
+    }
+    .outofstock {
+      background-color:var(--error);
+      color:white;
+      padding: 0.5rem;
+      border-radius: 7px;
+    }
+  }
+}

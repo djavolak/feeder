@@ -1,0 +1,22 @@
+{
+    "db": {
+       "feeder":{
+            "host": "localhost",
+            "port": 3306,
+            "user": "yogi",
+            "password": "rootpass",
+            "db": "feeder", 
+            "charset": "utf8mb4"
+        },
+        "ecomHelper":{
+            "host": "localhost",
+            "port": 3306,
+            "user": "yogi",
+            "password": "rootpass",
+            "db": "ecomHelper",
+            "charset": "utf8mb4"
+        }
+    },
+    "imagePath": "/home/yogi/projects/feederv2/images/",
+    "defaultTax": 20
+}

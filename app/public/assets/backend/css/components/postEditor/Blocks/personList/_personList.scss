@@ -1,0 +1,72 @@
+.personListBlockContainer {
+  display:flex;
+  gap:1rem;
+  margin:1rem 0;
+  border: 1px solid lightgray;
+  border-radius:5px;
+  padding:1rem 2rem;
+  flex-wrap:wrap;
+  textarea {
+    width:500px;
+  }
+  .addButtonContainer {
+    flex-basis:100%;
+    .blockButton {
+      margin:0;
+    }
+  }
+  .personsContainer {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    .personContainer {
+      display:flex;
+      align-items:flex-start;
+      gap:2rem;
+      flex-wrap:wrap;
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      textarea {
+        width:250px;
+      }
+      .personDeleteButton {
+        cursor:pointer;
+        svg {
+          width:16px;
+          fill:var(--error);
+          pointer-events:none;
+        }
+      }
+      .imagePreviewContainer {
+        margin-top:0;
+      }
+      .personImage {
+        width:max-content;
+        outline:none;
+        border:none;
+        margin:0 auto;
+        display:block;
+        border-radius:8px;
+        padding:0.5rem 1rem;
+        cursor:pointer;
+        background:var(--customBlue);
+        color:white;
+        transition:0.3s ease background;
+        &:hover {
+          background:var(--customGreen);
+        }
+      }
+      .nameAndDescriptionInputContainer {
+        display:flex;
+        flex-direction:column;
+        gap:1rem;
+      }
+      .blockInputContainer {
+        label {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

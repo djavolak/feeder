@@ -1,0 +1,108 @@
+.searchContent,
+.searchContentAttrValues,
+.selectWithSearchCBOS,
+.searchIconWrapperFilter,
+.searchAttributeContentAABOS,
+.searchAttributeValueContentAABOS{
+  position:relative;
+  top:0;
+  left:0;
+  z-index:99;
+  .searchContainer {
+    max-width: 250px;
+    position: absolute;
+    top: -52px;
+    left: -190px;
+    width: 300px;
+  .resultsContainer {
+    max-width: 250px;
+    width: 250px;
+    background: white;
+    z-index: 99;
+    max-height: 200px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $lightGray;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $blue;
+      border-radius: 10px;
+    }
+
+    &.show {
+      border: 1px solid var(--primary);
+      border-radius: 7px;
+    }
+
+    .searchResult {
+      cursor: pointer;
+      transition: 0.3s ease all;
+      padding: 0.5rem;
+      position: relative;
+
+      &:first-child {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+
+      &:hover {
+        background: (var(--primary));
+        color: white;
+      }
+    }
+
+    .alert-danger {
+      padding: 0.5rem;
+    }
+
+    .loaderAjaxSearch {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 6px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 6px solid $blue;
+      width: 38px;
+      height: 38px;
+      -webkit-animation: spinAjaxLoader 2s linear infinite; /* Safari */
+      animation: spinAjaxLoader 2s linear infinite;
+      z-index: 999;
+      opacity: 1;
+
+      &.small {
+        width: 30px;
+        height: 30px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid $blue;
+      }
+    }
+  }
+
+    @keyframes spinAjaxLoader {
+      from {
+        transform:rotate(0deg);
+      }
+      to {
+        transform:rotate(360deg);
+      }
+    }
+  }
+}

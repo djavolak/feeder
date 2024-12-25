@@ -1,0 +1,29 @@
+.imagePreviewContainer {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:max-content;
+  margin:1rem 0;
+  padding:1rem;
+  border:1px solid lightgray;
+  border-radius:8px;
+  img {
+    max-width:150px;
+    max-height:150px;
+    object-fit:contain;
+    display:block;
+    margin:0.5rem auto;
+  }
+  .removeImagePreviewContainer {
+    border-radius: 8px;
+    padding: 0.2rem 0.7rem;
+    cursor: pointer;
+    background:var(--error);
+    color:white;
+    transition:0.3s ease all;
+    &:hover {
+      background:red;
+    }
+  }
+}

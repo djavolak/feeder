@@ -1,0 +1,26 @@
+.sliderBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+  min-height:76px;
+  .slidesContainer {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+  .deleteButton {
+    cursor:pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    svg {
+      width:18px;
+      pointer-events:none;
+      fill:var(--error);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.contentListContainer {
+  &>.blockInputContainer {
+    &> select {
+      width:300px;
+    }
+  }
+  &>.blockButton {
+    margin:1rem 0;
+  }
+  .contentListContentContainer {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    .contentEntityContainer {
+      display:flex;
+      gap:1rem;
+      align-items:flex-start;
+      textarea {
+        width:400px;
+      }
+      .deleteContentEntity {
+        cursor:pointer;
+        svg {
+          fill:red;
+          pointer-events:none;
+          width:14px;
+        }
+      }
+    }
+  }
+}

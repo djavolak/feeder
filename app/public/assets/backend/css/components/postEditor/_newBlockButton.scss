@@ -1,0 +1,89 @@
+.buttonContainer {
+  width:max-content;
+  position: relative;
+  margin:0 auto;
+  .addNewBlock {
+    cursor: pointer;
+    border: 2px solid var(--customBlue);
+    border-radius: 50%;
+    padding: 4px 5px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease all;
+    &:hover {
+      background: var(--customBlue);
+      transform: rotate(90deg);
+      svg {
+        fill: white;
+      }
+    }
+    svg {
+      width: 16px;
+      pointer-events: none;
+      fill: var(--customBlue);
+      transition: 0.3s ease fill;
+    }
+    &.active {
+      background: var(--customRed);
+      border:2px solid var(--customRed);
+      svg {
+        fill:white;
+      }
+    }
+  }
+  .blockListContainer {
+    display: none;
+    position: absolute;
+    width: 176px;
+    border: 2px solid var(--customLightGray);
+    border-radius: 4px;
+    min-height: 50px;
+    top:2.5rem;
+    left:-70px;
+    box-sizing:border-box;
+    padding:0.5rem;
+    background:white;
+    gap:1rem;
+    flex-wrap:wrap;
+    &.show {
+      display:flex;
+    }
+    .blockIcon {
+      display:flex;
+      cursor:pointer;
+      background:var(--customBlue);
+      padding:0.3rem;
+      border-radius:5px;
+      transition:0.3s ease all;
+      box-sizing:border-box;
+      width:27px;
+      height:27px;
+      justify-content: center;
+      &.hide {
+        display:none;
+      }
+      &:hover {
+        background:var(--customGreen);
+      }
+      svg {
+        pointer-events:none;
+        fill:white;
+        width:16px;
+      }
+    }
+    input {
+      width:100%;
+      border:1px solid var(--customLightGray);
+      border-radius:4px;
+      outline:none;
+      padding:0.3rem 0.5rem;
+      color:var(--customGray);
+      z-index:9999;
+      &:focus {
+        outline:1px solid var(--customLightBlue);
+      }
+    }
+  }
+}

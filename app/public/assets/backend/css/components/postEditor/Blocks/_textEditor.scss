@@ -1,0 +1,59 @@
+.textEditorContentContainer {
+  position:relative;
+  border:1px solid lightgray;
+  border-radius:5px;
+  outline:none;
+  padding:1rem;
+  margin:0.5rem 0;
+  color:var(--customGray);
+  &:focus {
+    border:1px solid lightgray;
+    outline:none;
+  }
+  .commandContainer {
+    display:none;
+    position:absolute;
+    top:-50px;
+    left:0;
+    border-radius:5px;
+    border:1px solid lightgray;
+    padding:0.5rem;
+    background:white;
+    &.show {
+      display:flex;
+      gap:0.5rem;
+      flex-wrap:wrap;
+    }
+    button {
+      outline:none;
+      border:none;
+      border-radius:5px;
+      padding:0.3rem 0.5rem;
+      background:var(--customBlue);
+      display:flex;
+      align-items: center;
+      justify-content:center;
+      cursor:pointer;
+      &[title='justifyLeft'] {
+        margin-left:1rem;
+      }
+
+      &.active {
+        background:#1cc88a;
+      }
+      svg {
+        width:12px;
+        fill:white;
+      }
+    }
+  }
+  .textEditorContent {
+    &:focus {
+      border:none;
+      outline:none;
+    }
+  }
+  input {
+
+  }
+}

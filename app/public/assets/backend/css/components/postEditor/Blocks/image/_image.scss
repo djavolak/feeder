@@ -1,0 +1,28 @@
+.imageBlockContainer {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: var(--customGray);
+  .insertImageButton {
+    width:max-content;
+    outline:none;
+    border:none;
+    margin:0 auto;
+    display:block;
+    border-radius:8px;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+    background:var(--customBlue);
+    color:white;
+    transition:0.3s ease background;
+    &:hover {
+      background:var(--customGreen);
+    }
+  }
+  .imagePreviewContainer {
+    margin:1rem auto;
+  }
+}

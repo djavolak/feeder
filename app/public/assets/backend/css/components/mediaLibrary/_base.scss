@@ -1,0 +1,48 @@
+#mediaLibraryNavigation {
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  padding:0.75rem 1rem;
+  svg {
+    pointer-events:none;
+    fill:rgba(255,255,255,.3);
+    width:22px;
+  }
+  span {
+    color:white;
+    font-size:0.65rem;
+  }
+  &:hover {
+    svg {
+      fill: white;
+    }
+  }
+}
+.mediaLibraryInput {
+  width: 75px;
+  color:var(--textColorAlt);
+  border-radius: 4px;
+  border: 1px solid var(--grayDark);
+  padding: 0.5rem;
+  font-size:16px;
+  &:focus {
+    color: var(--textColorAlt);
+    background-color: white;
+    outline: 1px solid var(--mainBlueLight);
+  }
+}
+
+.hidden {
+  display:none !important;
+}
+
+select {
+  option {
+    &:disabled {
+      background:var(--grayDark);
+      color:white;
+    }
+  }
+}

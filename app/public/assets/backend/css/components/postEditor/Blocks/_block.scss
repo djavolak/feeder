@@ -1,0 +1,127 @@
+.blocksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.blockContainer {
+  position:relative;
+  .toggleBlockActionsButton {
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    right:-15px;
+    width:15px;
+    display:flex;
+    justify-content:center;
+    &:hover {
+      svg {
+        fill:dimgray;
+      }
+    }
+    svg {
+      pointer-events:none;
+      transition:0.3s ease fill;
+      width:6px;
+      fill:gray;
+    }
+  }
+  .blockActionsContainer {
+    display: none;
+    flex-direction:column;
+    gap:5px;
+    position:absolute;
+    width:max-content;
+    box-sizing:border-box;
+    border:1px solid var(--customGray);
+    top:0;
+    right:0;
+    background:white;
+    z-index:99;
+    &.show {
+      display:flex;
+    }
+    .blockAction {
+      font-size:14px;
+      cursor: pointer;
+      padding:0.52rem;
+      color:var(--customGray);
+      transition:0.3s ease all;
+      background:white;
+      &:hover {
+        background:var(--customBlue);
+        color:white;
+      }
+      svg {
+        pointer-events: none;
+      }
+      &.deleteBlockAction {
+        &:hover {
+          background:var(--error);
+        }
+      }
+    }
+  }
+  .blockAnchor {
+    background:var(--customBlue);
+    padding:0.5rem 1rem;
+    border-radius:5px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    transition:0.3s ease all;
+    &:hover {
+      background:var(--mainDarkBlue);
+    }
+  }
+}
+.blockInputContainer {
+  display:flex;
+  flex-direction:column;
+}
+.blockInputElement {
+  color: dimgray;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  padding: 0.3rem;
+  font-size: 16px;
+  &:focus {
+    color: dimgray;
+    background-color: white;
+    outline: 1px solid var(--customLightBlue);
+  }
+}
+
+.blockButton {
+  width:max-content;
+  outline:none;
+  border:none;
+  margin:0 auto;
+  display:block;
+  border-radius:8px;
+  padding:0.5rem 1rem;
+  cursor:pointer;
+  background:var(--customBlue);
+  color:white;
+  transition:0.3s ease background;
+  &:hover {
+    background:var(--customGreen);
+  }
+}
+
+.hideBlockContainers {
+  .blockInputContainer {
+    display:none !important;
+  }
+}
+
+.toggleVisibility {
+  height:0 !important;
+  overflow:hidden !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:none !important;
+}

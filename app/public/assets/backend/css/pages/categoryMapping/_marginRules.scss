@@ -1,0 +1,20 @@
+#marginRulesContainer {
+  margin-top:1rem;
+  #addRule,
+  #addGroup {
+    margin-bottom:1rem;
+  }
+    .form-group {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      .deleteMargin {
+        cursor:pointer;
+        svg {
+          pointer-events:none;
+          width:24px;
+          color:red;
+        }
+      }
+    }
+}

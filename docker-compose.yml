@@ -1,0 +1,55 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./app:/app
+      - logs:/var/log/nginx:rw
+      - logs:/var/log/php-fpm/:rw
+      - sock:/sock
+    ports:
+      - "80:80"
+  php:
+    build:
+      context: .
+      dockerfile: ./docker/php/PHP.Dockerfile
+      args:
+        - PHP_VERSION=${PHP_VERSION}
+        - IMAGES_PATH=${IMAGES_PATH}
+    volumes:
+      - sock:/sock
+      - ./docker/php/zz-docker.conf:/usr/local/etc/php-fpm.d/zz-docker.conf
+      - ./app:/app
+      - logs:/var/log/php-fpm/:rw
+      - images:/app/${IMAGES_PATH}
+  mysql:
+    image: mariadb:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_DATABASE=${DB_NAME:-defaultProjectDb}
+      - MYSQL_USER=${DB_USER:-user}
+      - MYSQL_PASSWORD=${DB_PASSWORD:-password}
+    volumes:
+      - storage:/var/lib/mysql
+    ports:
+      - 3306:3306
+  redis:
+    image: redis:latest
+    volumes:
+      - storage:/data
+    ports:
+      - "6379:6379"
+  python:
+    build:
+      context: .
+      dockerfile: ./docker/python/Py.Dockerfile
+    tty: true
+    volumes:
+      - /app:/app
+      - images:/app${IMAGES_PATH}/originalImages/
+volumes:
+  storage: {}
+  logs: {}
+  images: {}
+  sock: {}
